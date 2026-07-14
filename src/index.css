@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Marcellus&display=swap');
+
+:root {
+  --navy: #001c36;
+  --navy-deep: #00152a;
+  --copper: #c75f46;
+  --copper-dark: #b6533d;
+  --ivory: #f7f4ef;
+  --paper: #fffdf9;
+  --line: #ddd8cf;
+  --muted: #69747d;
+  --text: #0b2945;
+  --white: #ffffff;
+  color: var(--text);
+  font-family: 'DM Sans', Arial, sans-serif;
+  background: var(--paper);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--paper);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  overflow: hidden;
+}

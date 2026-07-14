@@ -1,0 +1,20 @@
+import PageHeader from '../components/PageHeader'
+import SectionTitle from '../components/SectionTitle'
+import ServiceCard from '../components/ServiceCard'
+import { asset, services } from '../data/siteData'
+
+function Services() {
+  return (
+    <>
+      <PageHeader title="Practice Area" crumb="Practice Area" image={asset('assets/img/background/service_bg.jpg')} />
+      <section className="services-page patterned">
+        <SectionTitle kicker="Our Specializations" title="Comprehensive Legal Services for Modern Challenges" align="center" />
+        <div className="services-grid">
+          {services.map((service) => <ServiceCard key={service.id} service={service} />)}
+        </div>
+      </section>
+    </>
+  )
+}
+
+export default Services
