@@ -1,0 +1,746 @@
+{
+  "reviews": [
+    {
+      "colorClass": "bg-indigo",
+      "initials": "JC",
+      "name": "John Carter",
+      "date": "Oct 15, 2023",
+      "text": "After my business partner absconded with company funds to an offshore account, I thought all was lost. Golden Pacific Law Firm, specifically Martin Careaga Munoz, took on our incredibly complex international asset recovery case. His grasp of cross-border financial law is phenomenal. He coordinated with investigators and foreign counsel seamlessly. It was a long fight, but we recovered a significant portion. Martin is a strategic thinker and a tenacious advocate. A+++"
+    },
+    {
+      "colorClass": "bg-green",
+      "initials": "SJ",
+      "name": "Sarah Jenkins",
+      "date": "May 22, 2024",
+      "text": "Dealing with a fraudulent cryptocurrency investment scheme was devastating. I contacted several firms who said it was impossible to trace. Paul Wei-Jye Chen at Golden Pacific was the only one who didn’t flinch. His knowledge of blockchain forensics and recovery pathways is cutting-edge. He set realistic expectations but fought relentlessly. We managed to freeze and recover a substantial amount. Paul is a pioneer in this field."
+    },
+    {
+      "colorClass": "bg-green",
+      "initials": "RF",
+      "name": "Robert Fitz",
+      "date": "Nov 30, 2021",
+      "text": "Our company was the victim of a sophisticated financial fraud involving shell companies across three jurisdictions. The team at Golden Pacific, led by Hansen L. Wong, was outstanding. Hansen’s strategic approach to untangling the corporate web and initiating simultaneous litigation in multiple forums was impressive. His calm demeanor under pressure kept us sane. We successfully pierced the corporate veil and secured a favorable judgment."
+    },
+    {
+      "colorClass": "bg-red",
+      "initials": "ER",
+      "name": "Elena Rodriguez",
+      "date": "Feb 10, 2024",
+      "text": "I needed help with a cross-border matrimonial asset recovery case. My ex-husband had hidden assets in Asia. Paul Y. Liu handled my case with both legal precision and personal sensitivity. He understood the emotional toll and was always transparent. His network of contacts and understanding of both U.S. and Asian legal systems were invaluable. We located and secured assets I didn’t even know existed."
+    },
+    {
+      "colorClass": "bg-red",
+      "initials": "DP",
+      "name": "David Park",
+      "date": "Jul 8, 2024",
+      "text": "As a creditor in a complex bankruptcy proceeding, I felt lost and powerless. Dabid W. Liao from Golden Pacific represented our interests. He has a deep understanding of creditors’ rights and bankruptcy codes. His negotiations with the trustee and other creditors were masterful. We achieved a recovery rate far higher than initially projected. Dabid is sharp, aggressive when needed, and highly effective."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "MT",
+      "name": "Michelle Thompson",
+      "date": "Sep 5, 2023",
+      "text": "Facing litigation from an overseas bank was daunting. Davis L. Kim represented our firm. His expertise in international commercial litigation and banking regulations is top-tier. He prepared exhaustive legal briefs and his courtroom presentation was compelling. He turned a defensive case into a successful counterclaim. I highly recommend Davis for any high-stakes financial litigation."
+    },
+    {
+      "colorClass": "bg-red",
+      "initials": "JO",
+      "name": "James O’Connell",
+      "date": "Jan14, 2024",
+      "text": "We were involved in a bitter international arbitration regarding a joint venture gone wrong. Adrian Carios Jackson was our counsel. Adrian’s arbitration strategy was brilliant – he focused on the key arbitrators’ profiles and crafted arguments that resonated. His cross-examination of expert witnesses was devastatingly effective. We won the arbitration and were awarded costs. A superlative performance."
+    },
+    {
+      "colorClass": "bg-green",
+      "initials": "LZ",
+      "name": "Linda Zhao",
+      "date": "Aug 30, 2024",
+      "text": "Qinlei Wang assisted us with a sensitive matter involving potential proceeds of crime linked to a contractor. Qinlei was meticulous, ethical, and incredibly knowledgeable about anti-corruption and asset forfeiture laws. She guided us through the self-reporting and cooperation process with authorities, minimizing our exposure and allowing for the lawful recovery of funds. Professional and trustworthy."
+    },
+    {
+      "colorClass": "bg-teal",
+      "initials": "AK",
+      "name": "Anil Kapoor",
+      "date": "Dec 11, 2023",
+      "text": "Our company was defrauded by a supplier using forged letters of credit. Neeraj Kumar took our case. His background in both banking and litigation made him the perfect choice. He moved swiftly to obtain injunctive relief against the banks and pursued the fraudsters internationally. Neeraj is responsive, works tirelessly, and gets results. We recovered our losses in full."
+    },
+    {
+      "colorClass": "bg-red",
+      "initials": "KS",
+      "name": "Karen Smith",
+      "date": "Jun 19, 2024",
+      "text": "Hansen L. Wong represented us in a second matter, this time involving insolvency and creditor disputes. Once again, his performance was stellar. He has an uncanny ability to simplify complex financial situations for the judge. His reputation in the legal community itself commands respect, which often facilitates settlements. Golden Pacific is lucky to have him."
+    },
+    {
+      "colorClass": "bg-indigo",
+      "initials": "TW",
+      "name": "Thomas Wright",
+      "date": "Mar 3, 2024",
+      "text": "I consulted with Michalle Antionette Thompson-DaCosta regarding a complex inheritance case with international assets potentially tied to historical corruption. Michalle’s analysis was thorough and her advice was strategic and honest. She helped us structure an approach that balanced ethical recovery with legal pragmatism. Her integrity is as solid as her legal acumen."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "BO",
+      "name": "Business Owner",
+      "date": "Apr 17, 2024",
+      "text": "Left a 5-star rating. Exceptional service in asset recovery."
+    },
+    {
+      "colorClass": "bg-purple",
+      "initials": "CI",
+      "name": "Crypto Investor",
+      "date": "Sep 21, 2024",
+      "text": "Left a 5-star rating. Paul Chen is a wizard with crypto recovery."
+    },
+    {
+      "colorClass": "bg-green",
+      "initials": "WM",
+      "name": "Wai Man To",
+      "date": "Aug 8, 2023",
+      "text": "When our debtor filed for bankruptcy in another country, we thought our loan was lost. Martin Careaga Munoz navigated the cross-border insolvency protocols expertly. His filing in the ancillary proceeding here was flawless. We established priority and are now seeing distributions. Martin is a strategic asset."
+    },
+    {
+      "colorClass": "bg-green",
+      "initials": "JH",
+      "name": "Julia Hayes",
+      "date": "Oct 30, 2024",
+      "text": "Going through a divorce with international business holdings was a nightmare. Paul Y. Liu was recommended to me. He worked tirelessly to trace, value, and secure my share of global assets. His ability to work with forensic accountants and his firm’s international reach made all the difference. He was my steadfast advocate in a very difficult time."
+    },
+    {
+      "colorClass": "bg-teal",
+      "initials": "MB",
+      "name": "Michael Brody",
+      "date": "Feb 25, 2024",
+      "text": "We suspected internal fraud and embezzlement. Dabid W. Liao conducted the internal investigation with discretion and then handled the civil recovery aspect. He coordinated with law enforcement without compromising our civil case. His dual approach maximized our recovery. Dabid is shrewd and results-oriented."
+    },
+    {
+      "colorClass": "bg-blue",
+      "initials": "SL",
+      "name": "Samantha Lee",
+      "date": "Nove 02, 2023",
+      "text": "Davis L. Kim defended us in a high-value commercial arbitration. His preparation was exhaustive. He anticipated every move from the opposing counsel. His closing argument was not just legally sound but narratively compelling. The panel ruled almost entirely in our favor. Davis is a first-class litigator."
+    },
+    {
+      "colorClass": "bg-indigo",
+      "initials": "FP",
+      "name": "Former Partner",
+      "date": "Jun 9 2024",
+      "text": "After a partnership dissolution, assets were hidden overseas. Adrian Carios Jackson took on the recovery. His use of international discovery tools and ability to enforce foreign judgments here was critical. Adrian is creative, persistent, and communicates complex strategies clearly."
+    },
+    {
+      "colorClass": "bg-red",
+      "initials": "CO",
+      "name": "Compliance Officer",
+      "date": "May 5, 2024",
+      "text": "Qinlei Wang provided counsel on a complex compliance issue involving the Foreign Corrupt Practices Act (FCPA) and potential asset recovery from a foreign official. Her advice was precise, practical, and helped us avoid severe penalties while pursuing legitimate claims. She is an expert in this niche."
+    },
+    {
+      "colorClass": "bg-red",
+      "initials": "AP",
+      "name": "Atul Patel",
+      "date": "25 April 2022",
+      "text": "Best company you can deal with. Got my money and doing more get more money back and  to catch the scammers\r\nHighly recommend them"
+    },
+    {
+      "colorClass": "bg-teal",
+      "initials": "FV",
+      "name": "Fraud Victim",
+      "date": "Jan 18, 2024",
+      "text": "Neeraj Kumar helped me recover funds from a boiler room stock scam that operated across borders. He understood the urgency and moved quickly to trace the funds through multiple shell companies. His network of contacts was invaluable. He gave me my life back."
+    },
+    {
+      "colorClass": "bg-indigo",
+      "initials": "GC",
+      "name": "General Counsel",
+      "date": "Octo5, 2023",
+      "text": "Hansen L. Wong is our go-to external counsel for any major financial litigation or insolvency-related matter. His judgment is impeccable, and his track record speaks for itself. He is more than a lawyer; he is a strategic business advisor who happens to be a legal genius."
+    },
+    {
+      "colorClass": "bg-yellow",
+      "initials": "H",
+      "name": "Heir",
+      "date": "Aug 8, 2024",
+      "text": "Michalle Thompson-DaCosta handled a delicate estate recovery matter where assets were suspected to be the proceeds of crime. She balanced sensitivity with firm determination. Her work ensured the estate was cleared and assets distributed lawfully to the rightful heirs. Compassionate and tough."
+    },
+    {
+      "colorClass": "bg-yellow",
+      "initials": "A",
+      "name": "Anonymous",
+      "date": "Mar 29, 2024",
+      "text": "Left a 5-star rating. Golden Pacific recovered what others said was gone forever."
+    },
+    {
+      "colorClass": "bg-green",
+      "initials": "BE",
+      "name": "Bank Executiv",
+      "date": "June 1, 2024",
+      "text": "In a precedent-setting bank litigation case, Martin Careaga Munoz was opposing counsel. I was so impressed by his skill and professionalism that I later hired him for a separate matter. He is formidable in court and fair in negotiations. The highest recommendation."
+    },
+    {
+      "colorClass": "bg-indigo",
+      "initials": "TE",
+      "name": "Tech Entrepreneur",
+      "date": "Sept 10, 2024",
+      "text": "Our startup’s funds were hacked and converted to cryptocurrency. Paul Wei-Jye Chen not only understood the technology but also the legal pathways for recovery. He worked with blockchain analysts and filed novel motions. We recovered over 70% of our funds, which was a miracle. Paul is the future of asset recovery law."
+    },
+    {
+      "colorClass": "bg-indigo",
+      "initials": "AV",
+      "name": "Alexander Vance",
+      "date": "Sep 10, 2025",
+      "text": "I was involved in a multi-jurisdictional bankruptcy case that felt like a legal labyrinth. Martin Careaga Munoz’s command of cross-border insolvency protocols was nothing short of masterful. He coordinated parallel proceedings in the U.S. and Europe with flawless precision, securing a pivotal claim for our creditor group. His strategic foresight turned a complex mess into a structured recovery plan. The entire team at Golden Pacific operates at the highest level."
+    },
+    {
+      "colorClass": "bg-purple",
+      "initials": "CB",
+      "name": "Chloe Bennett",
+      "date": "Nov 05, 2025",
+      "text": "After falling victim to a “pig butchering” crypto scam, I was devastated. Paul Wei-Jye Chen was my last hope. His firm’s collaboration with global blockchain intelligence units was impressive. Paul explained every step of the tracing and legal seizure process with patience. While full recovery is rare, his relentless efforts led to the freezing and return of a significant portion of my assets. He’s a true advocate in the digital frontier."
+    },
+    {
+      "colorClass": "bg-purple",
+      "initials": "MT",
+      "name": "Marcus Thorne",
+      "date": "Jul 18, 2025",
+      "text": "Our company faced litigation from an overseas bank over a disputed letter of credit. Hansen L. Wong’s defense was brilliant. He didn’t just respond to their claims; he dismantled their entire case by exposing procedural irregularities in the underlying transaction. His deep knowledge of UCP 600 and international banking practices was decisive. We achieved a full dismissal with prejudice. Hansen is a consummate professional."
+    },
+    {
+      "colorClass": "bg-green",
+      "initials": "IR",
+      "name": "Isabella Rossi",
+      "date": "Oct 22, 2025",
+      "text": "My divorce involved untangling assets held in family trusts across Italy and the United States. Paul Y. Liu handled this cross-border matrimonial asset recovery with exceptional skill and cultural sensitivity. He worked seamlessly with Italian counsel, ensuring strategies were aligned. His negotiation secured a settlement that reflected the true value of the marital estate. I felt protected and expertly represented throughout."
+    },
+    {
+      "colorClass": "bg-blue",
+      "initials": "DS",
+      "name": "Derek Shim",
+      "date": "Aug 30, 2025",
+      "text": "As a committee member in a large Chapter 11 case, I worked closely with Dabid W. Liao. His advocacy for unsecured creditors was powerful and data-driven. He challenged the debtor’s projections and proposed a viable reorganization plan that maximized our recovery. Dabid’s ability to simplify complex financials for the court was key to its approval. He is a fierce protector of creditors’ rights."
+    },
+    {
+      "colorClass": "bg-indigo",
+      "initials": "PM",
+      "name": "Priya Mehta",
+      "date": "Dec 03, 2025",
+      "text": "We engaged Golden Pacific for an International Chamber of Commerce arbitration in Singapore. Davis L. Kim was our lead counsel. His preparation of factual witnesses and expert economists was meticulous. During the hearings, his calm yet penetrating cross-examination unraveled the other side’s testimony. The tribunal awarded us 90% of our claimed damages plus costs. Davis is a world-class arbitration practitioner."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "ES",
+      "name": "Edward Sterling",
+      "date": "Sep 28, 2025",
+      "text": "Recovering misappropriated corporate funds funneled through Caribbean shell companies required a specialist. Adrian Carios Jackson was that specialist. His innovative use of worldwide freezing orders and disclosure mandates put immense pressure on the defendants. Adrian’s strategic aggression, tempered with legal precision, forced a swift and favorable settlement before trial. Outstanding result."
+    },
+    {
+      "colorClass": "bg-teal",
+      "initials": "LP",
+      "name": "Lena Petrova",
+      "date": "Nov 15, 2025",
+      "text": "We retained Qinlei Wang for advice on a sensitive internal investigation involving potential FCPA violations and asset repatriation. Qinlei’s guidance was crystal clear, ethically sound, and strategically astute. She helped us design a corrective action plan that satisfied regulators and allowed us to pursue recovery of diverted funds. Her dual focus on compliance and recovery is invaluable."
+    },
+    {
+      "colorClass": "bg-teal",
+      "initials": "RA",
+      "name": "Rajiv Anand",
+      "date": "Jul 01, 2025",
+      "text": "A business partner committed a massive financial fraud, leaving behind a web of forged contracts. Neeraj Kumar took the case and moved with incredible speed. He obtained asset restraining orders and coordinated with law enforcement for a parallel criminal investigation. Neeraj’s dual-track strategy resulted in both a restitution order and a successful civil judgment. He is a tenacious and effective litigator."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "SW",
+      "name": "Sophia Williams",
+      "date": "Oct 05, 2025",
+      "text": "I have worked with Hansen L. Wong on several complex matters over the years, and his counsel in a recent financial fraud case was again exemplary. He has a rare ability to identify the core weakness in an opponent’s position and build an irresistible legal argument around it. His reputation precedes him, often leading to advantageous pre-trial resolutions. A trusted advisor and formidable opponent."
+    },
+    {
+      "colorClass": "bg-purple",
+      "initials": "BF",
+      "name": "Benjamin Ford",
+      "date": "Aug 12, 2025",
+      "text": "Facing allegations related to the receipt of potentially tainted assets in an estate, I turned to Michalle Antionette Thompson-DaCosta. She conducted a thorough provenance review and navigated the voluntary disclosure process with the Department of Justice. Her work resulted in a clear title to the assets for the beneficiaries. Michalle combines rigorous legal analysis with pragmatic solutions."
+    },
+    {
+      "colorClass": "bg-blue",
+      "initials": "AC",
+      "name": "Anonymous Client",
+      "date": "Sep 03, 2025",
+      "text": "Left a 5-star rating. Golden Pacific’s team, especially Martin C. Munoz, turned an impossible international recovery case into a success. Their network is global and their execution is flawless."
+    },
+    {
+      "colorClass": "bg-purple",
+      "initials": "CM",
+      "name": "CFO, Manufacturing Co.",
+      "date": "Dec 11, 2025",
+      "text": "When a foreign buyer’s bank wrongfully dishonored our presentation under a letter of credit, Davis L. Kim pursued them without hesitation. His litigation strategy was aggressive and focused. He secured summary judgment on key liability issues, forcing a very favorable settlement. Davis understands the urgency in commercial disputes and delivers results."
+    },
+    {
+      "colorClass": "bg-teal",
+      "initials": "ED",
+      "name": "Elena’s Daughter",
+      "date": "Nov 28, 2025",
+      "text": "Following my mother’s positive experience, I hired Paul Y. Liu for my own cross-border custody and asset protection case. He was just as compassionate and even more determined. He protected my child’s future by securing and enforcing foreign asset orders. Paul feels more like a guardian than just a lawyer. Forever grateful."
+    },
+    {
+      "colorClass": "bg-indigo",
+      "initials": "IF",
+      "name": "Investment Fund Manager",
+      "date": "Jul 25, 2025",
+      "text": "Our fund was caught in a sovereign debt restructuring with elements of corruption. The legal landscape was a minefield. Martin Careaga Munoz and Qinlei Wang co-led our team. Their combined expertise in international finance and anti-corruption law was powerful. They devised a recovery strategy that was both legally sound and politically savvy, recovering a significant portion of our investment."
+    },
+    {
+      "colorClass": "bg-blue",
+      "initials": "TS",
+      "name": "Tech Startup Founder",
+      "date": "Oct 08, 2025",
+      "text": "A competitor stole our IP and moved funds to a cryptocurrency mixer. Paul Wei-Jye Chen not only traced the funds but also navigated the novel legal arguments required for recovery. He filed a groundbreaking motion that established precedent for treating mixed crypto assets. His work is at the absolute cutting edge of law and technology."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "BT",
+      "name": "Bankruptcy Trustee",
+      "date": "Aug 22, 2025",
+      "text": "In a complex Chapter 7 case with international assets, I retained Dabid W. Liao to assist with recovery. His knowledge of the Bankruptcy Code’s avoidance powers and how to apply them cross-border was instrumental. He successfully avoided several fraudulent transfers, significantly augmenting the estate for distribution. Dabid is an asset to any trustee."
+    },
+    {
+      "colorClass": "bg-yellow",
+      "initials": "SF",
+      "name": "Sports Franchise Owner",
+      "date": "Sep 17, 2025",
+      "text": "A failed international player transfer deal led to arbitration. Adrian Carios Jackson represented our franchise. His understanding of both sports law and international commercial arbitration rules gave us a distinct advantage. He negotiated a settlement mid-arbitration that included a lucrative future option for us. Creative and strategic thinking at its best."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "FO",
+      "name": "Family Office Director",
+      "date": "Nov 02, 2025",
+      "text": "We needed to discreetly investigate and recover assets from a poorly performing overseas investment that showed signs of fraud. Neeraj Kumar handled the matter with the utmost discretion and efficiency. His forensic approach identified the leak, and his legal actions plugged it, recovering most of the capital. Highly recommended for sensitive financial matters."
+    },
+    {
+      "colorClass": "bg-green",
+      "initials": "GC",
+      "name": "General Counsel",
+      "date": "Dec 19, 2025",
+      "text": "Hansen L. Wong recently led our defense in a $100M+ commercial fraud lawsuit. His courtroom demeanor is commanding, and his legal briefs are works of art. He persuaded the court to exclude the plaintiff’s key expert witness, which led to a swift and favorable settlement. Hansen is the first call we make for bet-the-company litigation."
+    },
+    {
+      "colorClass": "bg-teal",
+      "initials": "AC",
+      "name": "Art Collector",
+      "date": "Oct 31, 2025",
+      "text": "I discovered a painting looted decades ago was being sold at a foreign auction house. Michalle Thompson-DaCosta took the case. Her research into provenance and international cultural property laws was exhaustive. She negotiated directly with the auction house and the holder, achieving a private, amicable restitution without costly litigation. A scholar and a skilled negotiator."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "SC",
+      "name": "Satisfied Client",
+      "date": "Jul 08, 2025",
+      "text": "Left a 5-star rating. Paul Chen and his team are crypto recovery geniuses. They speak the language of both the blockchain and the courtroom."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "IT",
+      "name": "International Trade Consultant",
+      "date": "Aug 05, 2025",
+      "text": "A client’s goods were seized abroad under a false claim. The situation involved international arbitration under a bilateral investment treaty. Davis L. Kim structured our claim brilliantly. His preparation of the memorial was so compelling it prompted an early settlement offer. Davis has a gift for framing complex facts within a powerful legal narrative."
+    },
+    {
+      "colorClass": "bg-blue",
+      "initials": "HT",
+      "name": "Heir to an Estate",
+      "date": "Sep 22, 2025",
+      "text": "An executor was suspected of dissipating estate assets into foreign accounts. Paul Y. Liu was hired to investigate and recover. His use of discovery tools and coordination with foreign legal counsel was seamless. He recovered the missing funds and ensured the executor was removed. Paul restored our faith in the legal process."
+    },
+    {
+      "colorClass": "bg-indigo",
+      "initials": "RM",
+      "name": "Risk Management Officer",
+      "date": "Nov 19, 2025",
+      "text": "After a vendor’s corruption was uncovered, we needed to recover contract payments and manage regulatory risk. Qinlei Wang designed and executed a perfect strategy. She guided our communication with authorities while simultaneously filing civil suits for recovery. The outcome minimized penalties and maximized financial recovery. Qinlei is a strategic powerhouse in crisis management."
+    },
+    {
+      "colorClass": "bg-yellow",
+      "initials": "GA",
+      "name": "Gregory Alvarez",
+      "date": "Feb 14, 2025",
+      "text": "My family business was nearly destroyed by a trusted advisor who embezzled funds and moved them offshore. We were lost until we found Martin Careaga Munoz. From our first meeting, his calm authority gave us hope. He built a global strategy, working with lawyers in three countries to freeze assets and initiate recovery actions. The process was long, but Martin kept us informed at every turn. Thanks to his unwavering dedication, we recovered over 80% of our losses and saved the company. He is more than a lawyer; he is a guardian for his clients."
+    },
+    {
+      "colorClass": "bg-purple",
+      "initials": "AP",
+      "name": "Anya Petrova",
+      "date": "May 23, 2025",
+      "text": "As an artist, I was devastated when a gallery sold my work and disappeared with the proceeds, converting the money to cryptocurrency. I felt it was hopeless. Paul Wei-Jye Chen was recommended to me. He didn’t just see a crypto transaction; he saw a trail. His team of analysts traced the funds through multiple wallets. Paul’s legal filings were innovative and aggressive. He recovered a substantial portion of my earnings. He treated my case, which was small to some but everything to me, with immense respect and tenacity. I am forever grateful."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "HJ",
+      "name": "Harold Jenkins",
+      "date": "Mar 30, 2025",
+      "text": "At 72, I found myself the victim of a sophisticated “romance scam” that drained my retirement savings, with wires sent to Asia. I was ashamed and heartbroken. Hansen L. Wong took my case with profound compassion. He explained everything in plain English, never making me feel foolish. He worked with international fraud units and banks, applying steady legal pressure. While not everything could be recovered, Hansen fought to get back a meaningful sum that has given me financial peace. His kindness was as valuable as his legal skill."
+    },
+    {
+      "colorClass": "bg-red",
+      "initials": "EV",
+      "name": "Eleanor Vance",
+      "date": "Jun 17, 2025",
+      "text": "After my husband’s passing, I discovered hidden accounts and investments in Hong Kong and Singapore that I knew nothing about. The complexity was overwhelming. Paul Y. Liu handled the probate and international asset recovery with incredible sensitivity and efficiency. He communicated with foreign institutions flawlessly and navigated the legal intricacies of two jurisdictions. He secured all assets for the estate, ensuring my future was secure. Paul was my rock during a very difficult time—professional, patient, and profoundly competent."
+    },
+    {
+      "colorClass": "bg-green",
+      "initials": "DM",
+      "name": "David Miller",
+      "date": "Apr 11, 2025",
+      "text": "I owned a small manufacturing firm that supplied a larger company that then filed for bankruptcy, owing me a significant amount. I was just one of many creditors. Dabid W. Liao took my case and fought tirelessly for small businesses like mine. He made sure our voice was heard in the creditors’ committee. His negotiation secured priority payments for critical vendors, which included me. Dabid didn’t treat me like a small file; he treated me like a priority. He saved my business."
+    },
+    {
+      "colorClass": "bg-purple",
+      "initials": "FC",
+      "name": "Fiona Clarke",
+      "date": "Jul 08, 2025",
+      "text": "I was embroiled in a business dispute with a former partner in the UK. The contract mandated arbitration in London. The cost and distance were daunting. Davis L. Kim represented me from the U.S. with flawless execution. His virtual preparation and presence were masterful. He understood the nuances of English arbitration law and crafted arguments that resonated with the tribunal. We won on every major point. Davis made a complex international process feel manageable and controlled. A brilliant legal mind."
+    },
+    {
+      "colorClass": "bg-purple",
+      "initials": "LM",
+      "name": "Leo Moretti",
+      "date": "Jan 25, 2025",
+      "text": "I invested in a luxury real estate development overseas that turned out to be a complete scam. The developers vanished. Adrian Carios Jackson took on the challenging task of asset recovery across borders. His approach was methodical and creative—piercing corporate veils, pursuing directors personally, and leveraging international treaties. His persistence paid off with a settlement that returned a significant portion of my investment. Adrian is a fighter who doesn’t give up, even when the trail seems cold."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "SW",
+      "name": "Samantha Woo",
+      "date": "Aug 03, 2025",
+      "text": "I inherited a portfolio that included an investment in a foreign venture capital fund later implicated in a corruption scandal. I was terrified of legal liability. Qinlei Wang provided clear, step-by-step guidance on navigating the voluntary disclosure process and segregating the tainted assets. Her knowledge of anti-money laundering laws and asset forfeiture was a lifesaver. She managed the recovery of the legitimate portion of the investment while shielding me from any wrongdoing. Qinlei is the definition of a trustworthy advisor."
+    },
+    {
+      "colorClass": "bg-orange",
+      "initials": "VC",
+      "name": "Victor Costa",
+      "date": "Sep 19, 2025",
+      "text": "A supplier defrauded our family-run import business with counterfeit bills of lading. The loss threatened to close us down. Neeraj Kumar acted with lightning speed. He obtained an emergency injunction to seize the supplier’s U.S. assets and simultaneously initiated action against their overseas banking partners. Neeraj’s aggressive, multi-pronged strategy forced a full financial settlement within months. He understood our urgency and worked around the clock. He saved our family’s livelihood."
+    },
+    {
+      "colorClass": "bg-red",
+      "initials": "BL",
+      "name": "Beatrice Lloyd",
+      "date": "May 05, 2025",
+      "text": "Following a messy corporate dissolution, I needed to ensure my personal assets, held in various international trusts, were protected from future claims. I consulted Hansen L. Wong for strategic advice. His analysis was thorough, and his recommendations were pragmatic and robust. He didn’t just look at the law; he looked at potential future scenarios. Thanks to his foresight, my estate is now structured with clarity and security. Hansen provides peace of mind that is worth every penny."
+    },
+    {
+      "colorClass": "bg-purple",
+      "initials": "RS",
+      "name": "Rahul Singh",
+      "date": "Oct 30, 2025",
+      "text": "My father’s estate included antiquities with a murky provenance, potentially looted decades ago. The ethical and legal dilemma was immense. Michalle Antionette Thompson-DaCosta handled the situation with extraordinary cultural sensitivity and legal expertise. She conducted provenance research and facilitated a voluntary restitution to the country of origin, which was handled with dignity and positive publicity. She then helped us legally recover a finder’s fee that was fair and honorable. Michalle turns complex ethical problems into dignified solutions."
+    },
+    {
+      "colorClass": "bg-red",
+      "initials": "CR",
+      "name": "Cassandra Reed",
+      "date": "Feb 28, 2025",
+      "text": "Left a 5-star rating. I was lost after a devastating financial fraud. Paul Y. Liu at Golden Pacific not only recovered my assets but also restored my confidence. His compassion is as real as his legal talent. Thank you."
+    },
+    {
+      "colorClass": "bg-yellow",
+      "initials": "T",
+      "name": "Theodore“Ted”Barnes",
+      "date": "Jun 09, 2025",
+      "text": "As a retired engineer, the world of international finance fraud was alien to me. After being scammed, I called Golden Pacific. Martin Careaga Munoz was my guide. He never used jargon, always drew diagrams to explain strategies, and treated me with the patience you’d give a family member. His team did the heavy lifting across continents, and he brought me a recovery check I never thought I’d see. Integrity and excellence personified."
+    },
+    {
+      "colorClass": "bg-purple",
+      "initials": "IC",
+      "name": "Isabelle Chen",
+      "date": "Apr 27, 2025",
+      "text": "My case involved tracing assets hidden by a relative through a series of shell companies in the Caribbean. It was emotionally draining. Adrian Carios Jackson managed the legal battle while being a steadying presence. His updates were regular and clear, and his determination never wavered. He successfully unraveled the corporate maze and recovered the family assets. Adrian combines sharp legal acumen with genuine human understanding."
+    },
+    {
+      "colorClass": "bg-teal",
+      "initials": "OG",
+      "name": "Oliver Grant",
+      "date": "Dec 05, 2025",
+      "text": "I am a freelance consultant who was never paid for a large project by a client based in Europe. Davis L. Kim took my case and pursued it through international commercial mediation. His preparation was so thorough that the other side settled during the first mediation session. Davis made the process efficient and cost-effective for an individual like me. He is proof that you can get top-tier representation without being a Fortune 500 company. Highly recommended for cross-border contract disputes."
+    }
+  ],
+  "blog": [
+    {
+      "id": "37",
+      "date": "December 3, 2025",
+      "title": "The Tinder Catfish Trap: Why Digital Forensics is Critical to Scam Recovery",
+      "image": "/upload/news/c23b94dc1ae65748/0a2ffbaccf8ec7f6.jpg"
+    },
+    {
+      "id": "36",
+      "date": "November 21, 2025",
+      "title": "Pig Butchering Scams Top Threat to Investors: Crypto Tracing and Asset Recovery",
+      "image": "/upload/news/fee52fae29dc266a/9441ab307463638f.jpg"
+    },
+    {
+      "id": "35",
+      "date": "November 6, 2025",
+      "title": "Dismantling the Global Fraud Ring: Why Private Intelligence Is Essential in the Era of Crypto Scams",
+      "image": "/upload/news/635cc7019d85b469/3f2f6d32c91eba88.jpg"
+    },
+    {
+      "id": "34",
+      "date": "October 23, 2025",
+      "title": "Meta, WhatsApp, and Messenger Scams: Why Tech Warnings Are Not Enough",
+      "image": "/upload/news/b787ab7c3b423398/2db04392ce6bcb28.jpg"
+    },
+    {
+      "id": "33",
+      "date": "September 18, 2025",
+      "title": "US-UK Tech Partnership: A New Frontier, But Also a New Target for Fraud",
+      "image": "/upload/news/79a9b3554477c97f/ed7e929a55d5e861.jpg"
+    },
+    {
+      "id": "32",
+      "date": "September 18, 2025",
+      "title": "52% Rise in Romance Scams Targeting Over-55s",
+      "image": "/upload/news/0c0bc55fb789bbc5/1c394c1f0520e20d.jpg"
+    },
+    {
+      "id": "31",
+      "date": "September 17, 2025",
+      "title": "Tinder Swindler's Arrest: A Case Study in Modern Financial Crime",
+      "image": "/upload/news/a8d9e46d431e16c5/8b01ccaeeddda3a8.jpg"
+    },
+    {
+      "id": "30",
+      "date": "September 16, 2025",
+      "title": "Apple Issues Urgent Warning to All iPhone Users",
+      "image": "/upload/news/1fc0694b625de283/d511084366695e57.jpg"
+    },
+    {
+      "id": "29",
+      "date": "August 22, 2025",
+      "title": "The Hidden Scars of Online Love: A New Fight Against Romance Scams",
+      "image": "/upload/news/2673098ec4f7a308/dfc7a32c8e2df34b.jpg"
+    },
+    {
+      "id": "28",
+      "date": "July 10, 2025",
+      "title": "Dirty Cryptocurrencies: Understanding the Risks & How Golden Pacific Law Firm Protects You",
+      "image": "/upload/news/4c10989e8040b166/a77f2a50c274453a.jpg"
+    },
+    {
+      "id": "27",
+      "date": "June 2, 2025",
+      "title": "What is Due Diligence? Your Complete Guide",
+      "image": "/upload/news/5a69a8140886d421/b844d8d294dd95fe.jpg"
+    },
+    {
+      "id": "26",
+      "date": "May 9, 2025",
+      "title": "Navigating Opportunities and Risks in the May 2025 UK–US Trade Agreement",
+      "image": "/upload/news/df2580bb3b273670/ce86e194e5d53cf2.jpg"
+    },
+    {
+      "id": "25",
+      "date": "May 7, 2025",
+      "title": "High net worth matrimonial surveillance, balancing emotions, ethics and law",
+      "image": "/upload/news/09bd717fcdc91450/73dbe8e276d6c5f3.jpg"
+    },
+    {
+      "id": "24",
+      "date": "February 24, 2025",
+      "title": "Protecting client interests in UHNW divorces through pre-decision asset tracing",
+      "image": "/upload/news/22d0046c75d94196/7fae2e416f5518c6.jpg"
+    },
+    {
+      "id": "23",
+      "date": "February 14, 2025",
+      "title": "How to spot a romance scam this Valentine's Day",
+      "image": "/upload/news/21b14a13272a0bf3/4654174fe01d58c9.jpg"
+    },
+    {
+      "id": "22",
+      "date": "February 5, 2025",
+      "title": "Common types of fraud targeting the public – And how investigators can help",
+      "image": "/upload/news/de31922ff6162d42/d0874cd4afa35dfd.jpg"
+    },
+    {
+      "id": "21",
+      "date": "January 17, 2025",
+      "title": "Is hiring a professional investigator worth it?",
+      "image": "/upload/news/937c8ae5438f0c3b/c4ce33de4e30d204.jpg"
+    },
+    {
+      "id": "20",
+      "date": "December 5, 2024",
+      "title": "Avoiding Tragedy When Providing Security And Risk Solutions For C-Suite Executives",
+      "image": "/upload/news/6c106b49cf0a3ad7/c70c85d21cb5ff33.jpg"
+    },
+    {
+      "id": "19",
+      "date": "November 28, 2024",
+      "title": "How can asset tracing help in litigation?",
+      "image": "/upload/news/2430af9f15ea1c17/aced5e4089c42d02.jpg"
+    },
+    {
+      "id": "18",
+      "date": "July 2, 2024",
+      "title": "What is Asset Tracing?",
+      "image": "/upload/news/9218a75b7fe8554e/48e696aa6950f3dc.jpg"
+    },
+    {
+      "id": "17",
+      "date": "May 9, 2024",
+      "title": "Protect yourself from pig butchering scams",
+      "image": "/upload/news/e74bca7059b5a7aa/346ab70f7fcb90b2.jpg"
+    },
+    {
+      "id": "16",
+      "date": "December 19, 2023",
+      "title": "Matrimonial divorce investigations: is there a discreet and legal way to uncover your cheating spouse’s secrets?",
+      "image": "/upload/news/6bec670d526ef3ff/89ac207ad9509a2a.jpg"
+    },
+    {
+      "id": "15",
+      "date": "December 16, 2025",
+      "title": "Understanding Commercial Asset Investigation for Business Fraud Cases",
+      "image": "/upload/news/f7804b05db615139/99debc730a7b833e.jpg"
+    },
+    {
+      "id": "14",
+      "date": "August 26, 2025",
+      "title": "How Does International Skip Tracing Work?",
+      "image": "/upload/news/6ee7a32638d2883e/fb60e34ea7100e50.jpg"
+    },
+    {
+      "id": "13",
+      "date": "July 24, 2024",
+      "title": "What Is Asset Recovery and When Is It Necessary?",
+      "image": "/upload/news/46a548982b29bf42/92ce425451054155.jpg"
+    },
+    {
+      "id": "12",
+      "date": "December 9, 2024",
+      "title": "What Are Business Assets? (Beginner Friendly Guide)",
+      "image": "/upload/news/1d8d614e6bb38c0a/604e3a8e29ded164.jpg"
+    },
+    {
+      "id": "11",
+      "date": "August 31, 2024",
+      "title": "What Are The Different Types Of Asset Classes? (Detailed)",
+      "image": "/upload/news/d232d6252c595143/de61d619947ad284.jpg"
+    },
+    {
+      "id": "10",
+      "date": "August 20, 2024",
+      "title": "Skip Tracing California",
+      "image": "/upload/news/a3166bf2c7272252/432584169ac5ba91.jpg"
+    },
+    {
+      "id": "9",
+      "date": "July 24, 2024",
+      "title": "The Best Methods to Collect Judgments (Detailed Guide)",
+      "image": "/upload/news/db9cb2d21ade085e/e10077f179e310ca.jpg"
+    },
+    {
+      "id": "8",
+      "date": "July 11, 2024",
+      "title": "Skip Tracing Social Media: What’s Real And What’s Fake?",
+      "image": "/upload/news/4032008aa89c984d/1e5a170353919f37.jpg"
+    },
+    {
+      "id": "7",
+      "date": "May 29, 2024",
+      "title": "International Debt Recovery: What Is It And How Is It Done?",
+      "image": "/upload/news/edae284ff259345b/7d5455cf69419d6b.jpg"
+    },
+    {
+      "id": "6",
+      "date": "April 5, 2024",
+      "title": "What Is B2B Debt Collection? (Explained)",
+      "image": "/upload/news/7ac1fc39cc4a3a0a/610af4827047c47e.jpg"
+    },
+    {
+      "id": "5",
+      "date": "February 8, 2024",
+      "title": "5 Common Accounts Receivable Challenges (Explained)",
+      "image": "/upload/news/2d9a0c512e84ca37/63921e9b237fb56d.jpg"
+    },
+    {
+      "id": "4",
+      "date": "January 10, 2024",
+      "title": "How To Conduct An Investigation (Beginner-Friendly Guide)",
+      "image": "/upload/news/7d63ec0f7f4abd24/2ee65b0ead0f5b07.jpg"
+    },
+    {
+      "id": "3",
+      "date": "November 9, 2023",
+      "title": "How to Evaluate the Creditworthiness of a Company",
+      "image": "/upload/news/4ff12975b24cab9d/89730844f1471e6e.jpg"
+    },
+    {
+      "id": "2",
+      "date": "October 16, 2023",
+      "title": "How To Collect Money From Clients Who Won’t Pay (Explained)",
+      "image": "/upload/news/f1ce649791684d38/9af7985a0b38c72a.jpg"
+    },
+    {
+      "id": "1",
+      "date": "January 8, 2024",
+      "title": "What Is A Hidden Asset Search?",
+      "image": "/upload/news/fafbce9a0a22ff2d/30aa0d71b4e87c47.jpg"
+    }
+  ],
+  "cases": [
+    {
+      "id": "9",
+      "date": "September 4, 2025",
+      "title": "Case Study: Exposing Breach of Gardening Leave in the Financial Services Sector",
+      "image": "/upload/case/b9d3a0109cd9d357/96f619579eea5eda.jpg"
+    },
+    {
+      "id": "8",
+      "date": "September 4, 2025",
+      "title": "Case Study: Comprehensive Due Diligence for a Major Investment Decision",
+      "image": "/upload/case/ded7be5578c28dc0/a1de51deef8f8ef8.jpg"
+    },
+    {
+      "id": "7",
+      "date": "September 4, 2025",
+      "title": "Case Study: Safeguarding Corporate Offices and Executive Homes with TSCM",
+      "image": "/upload/case/cee433cf0eebf84a/891567382006c363.jpg"
+    },
+    {
+      "id": "6",
+      "date": "February 4, 2025",
+      "title": "Case Study: International Trace and Locate for a Television Production",
+      "image": "/upload/case/1ed1f04f09a788e9/ebde58f2254411b9.jpg"
+    },
+    {
+      "id": "5",
+      "date": "February 4, 2025",
+      "title": "Case Study: Fraud Investigation For A Online Romance Scam",
+      "image": "/upload/case/9afdcb5cedf74825/de81ba13222573d5.jpg"
+    },
+    {
+      "id": "4",
+      "date": "January 29, 2025",
+      "title": "Case Study: Surveillance Support in a High-Profile Divorce",
+      "image": "/upload/case/220ba7d88c47bf59/134126a4012e3acb.jpg"
+    },
+    {
+      "id": "3",
+      "date": "January 29, 2025",
+      "title": "Case Study: Exposing a Fraudulent UK Company and Recovering Stolen Goods",
+      "image": "/upload/case/5f4d66c9dc7b2453/6b668490c9819582.jpg"
+    },
+    {
+      "id": "2",
+      "date": "January 28, 2025",
+      "title": "Case Study: Counter-Surveillance Support During High-Profile Litigation",
+      "image": "/upload/case/78d86be5757eb429/508c3fe003050ff4.jpg"
+    },
+    {
+      "id": "1",
+      "date": "January 28, 2025",
+      "title": "Case Study: Ending a Blackmail Threat Against a High-Net-Worth Individual",
+      "image": "/upload/case/7796161694e29672/a001db4aa944fb15.jpg"
+    }
+  ]
+}

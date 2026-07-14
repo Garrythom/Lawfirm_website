@@ -24,6 +24,17 @@ html {
   scroll-behavior: smooth;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 body {
   margin: 0;
   min-width: 320px;

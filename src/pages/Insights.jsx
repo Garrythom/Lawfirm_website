@@ -1,35 +1,20 @@
 import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
-import { articles, asset, reviews } from '../data/siteData'
+import { asset } from '../data/siteData'
+import { caseStudies } from '../data/insightsData'
 
 function Insights() {
   return (
     <>
-      <PageHeader title="Insights" crumb="Insights" image={asset('assets/img/background/about_bg.jpg')} />
+      <PageHeader title="Case Studies" crumb="Case Studies" image={asset('assets/img/background/case_studies_bg.jpg')} />
       <section className="blog-preview insights-page">
-        <div className="blog-preview__top">
-          <SectionTitle kicker="Recent Blog Post" title="Latest Articles" />
-        </div>
-        <div className="article-grid">
-          {articles.map((article) => (
-            <article className="article-card" key={article.title}>
-              <img src={article.image} alt="" loading="lazy" />
-              <time>{article.date}</time>
-              <h3>{article.title}</h3>
-              <a href="/insights">Read More <span aria-hidden="true">-&gt;</span></a>
-            </article>
-          ))}
-        </div>
-      </section>
-      <section className="review-list patterned">
-        <SectionTitle kicker="Our Testimonials" title="Client Reviews" align="center" />
-        <div className="review-grid">
-          {reviews.map((review) => (
-            <article className="review-card" key={review.name}>
-              <span>{review.initials}</span>
-              <p>{review.text}</p>
-              <strong>{review.name}</strong>
-              <small>{review.date}</small>
+        <SectionTitle kicker="Some Case" title="Case Studies" align="center" />
+        <div className="article-grid article-grid--full">
+          {caseStudies.map((item) => (
+            <article className="article-card" key={item.id}>
+              <img src={item.image} alt="" loading="lazy" />
+              <time>{item.date}</time>
+              <h3>{item.title}</h3>
             </article>
           ))}
         </div>

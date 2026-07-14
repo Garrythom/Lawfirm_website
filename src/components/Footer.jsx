@@ -24,7 +24,7 @@ function Footer() {
           <h3>Useful Links</h3>
           <ul>
             {['Home', 'About', 'Team', 'Services', 'Blog', 'Reviews'].map((label) => (
-              <li key={label}><NavLink to={label === 'Home' ? '/' : `/${label.toLowerCase()}`}>{label}</NavLink></li>
+              <li key={label}><NavLink to={label === 'Home' ? '/' : label === 'Reviews' ? '/insights/reviews' : `/${label.toLowerCase()}`}>{label}</NavLink></li>
             ))}
           </ul>
         </div>
