@@ -46,7 +46,9 @@ function Footer() {
       <AwardCarousel awards={awards} />
       <div className="site-footer__main">
         <div className="site-footer__about">
-          <img src="/clone-assets/assets/img/resource/logo-1.svg" alt="Pacific Gate Law Firm" />
+          <NavLink to="/">
+            <img src="/clone-assets/assets/img/resource/logo-1.svg" alt="Pacific Gate Law Firm" />
+          </NavLink>
           <p>
             Pacific Gate Law Firm is an international law firm representing financial institutions, sovereign
             governments, companies, insolvency practitioners, and private clients in asset recovery, financial fraud,
@@ -58,9 +60,16 @@ function Footer() {
         <div>
           <h3>Useful Links</h3>
           <ul className="footer-links">
-            {['Home', 'About', 'Team', 'Services', 'Blog', 'Reviews'].map((label) => (
+            {[
+              { label: 'Home', path: '/' },
+              { label: 'About', path: '/about' },
+              { label: 'Team', path: '/team' },
+              { label: 'Case Studies', path: '/insights' },
+              { label: 'Blog', path: '/insights/blog' },
+              { label: 'Reviews', path: '/insights/reviews' },
+            ].map(({ label, path }) => (
               <li key={label}>
-                <NavLink to={label === 'Home' ? '/' : label === 'Reviews' ? '/insights/reviews' : `/${label.toLowerCase()}`}>
+                <NavLink to={path}>
                   <span className="footer-icon" aria-hidden="true">&#8250;</span>{label}
                 </NavLink>
               </li>
@@ -87,7 +96,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="site-footer__bottom">(c) Copyright 2026 Pacific Gate. All Rights Reserved</div>
+      <div className="site-footer__bottom">&copy; Copyright 2026 Pacific Gate. All Rights Reserved</div>
     </footer>
   )
 }

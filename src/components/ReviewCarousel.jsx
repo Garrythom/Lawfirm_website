@@ -1,16 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-
-const AVATAR_GRADIENTS = {
-  'bg-blue': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-  'bg-green': 'linear-gradient(135deg, #0ba360 0%, #3cba92 100%)',
-  'bg-orange': 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-  'bg-purple': 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-  'bg-red': 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-  'bg-teal': 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-  'bg-indigo': 'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)',
-  'bg-yellow': 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
-}
+import { AVATAR_GRADIENTS } from '../data/siteData'
 
 const AUTO_ADVANCE_MS = 5000
 const EXIT_MS = 1400

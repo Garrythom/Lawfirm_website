@@ -10,8 +10,22 @@ function Header() {
   const [results, setResults] = useState([])
   const [openSubmenu, setOpenSubmenu] = useState(null)
   const closeTimerRef = useRef(null)
+  const searchInputRef = useRef(null)
 
   const closeMenu = () => setMenuOpen(false)
+
+  useEffect(() => {
+    if (searchOpen) searchInputRef.current?.focus()
+  }, [searchOpen])
+
+  useEffect(() => {
+    if (!searchOpen) return
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') setSearchOpen(false)
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => document.removeEventListener('keydown', onKeyDown)
+  }, [searchOpen])
 
   // Hover-intent for the desktop dropdown: there's a gap between the nav
   // link and the submenu panel, so plain CSS :hover drops the instant the
@@ -41,8 +55,8 @@ function Header() {
   useEffect(() => {
     if (!searchOpen) return
     const term = query.trim()
-    if (!term) { setResults([]); return }
     const handle = setTimeout(async () => {
+      if (!term) { setResults([]); return }
       try {
         const data = await api.search(term)
         setResults(data.results || [])
@@ -127,6 +141,7 @@ function Header() {
           <div>
             <input
               id="site-search"
+              ref={searchInputRef}
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder="Search Here..."

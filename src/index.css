@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Marcellus&display=swap');
 
 :root {
-  --navy: #001c36;
-  --navy-deep: #00152a;
-  --copper: #c75f46;
+  --navy: #042748;
+  --navy-deep: #001026;
+  --copper: #bf5e44;
   --copper-dark: #b6533d;
   --ivory: #f7f4ef;
   --paper: #fffdf9;
-  --line: #ddd8cf;
-  --muted: #69747d;
+  --line: #d9d9d9;
+  --muted: #5a5d60;
   --text: #0b2945;
   --white: #ffffff;
   color: var(--text);
@@ -36,6 +36,8 @@ html {
 }
 
 body {
+  font-size: 17px;
+  line-height: 1.647;
   margin: 0;
   min-width: 320px;
   background: var(--paper);

@@ -70,15 +70,15 @@ app.get('/api/search', (req, res) => {
 
   const inServices = services
     .filter((s) => s.title.toLowerCase().includes(q) || s.summary.toLowerCase().includes(q))
-    .map((s) => ({ kind: 'service', id: s.id, title: s.title, summary: s.summary }))
+    .map((s) => ({ kind: 'service', id: s.id, title: s.title, summary: s.summary, path: `/services/${s.id}` }))
 
   const inTeam = team
     .filter((m) => m.name.toLowerCase().includes(q) || m.role.toLowerCase().includes(q))
-    .map((m) => ({ kind: 'team', id: m.id, title: m.name, summary: m.role }))
+    .map((m) => ({ kind: 'team', id: m.id, title: m.name, summary: m.role, path: '/team' }))
 
   const inArticles = articles
     .filter((a) => a.title.toLowerCase().includes(q))
-    .map((a) => ({ kind: 'article', id: a.id, title: a.title, summary: a.date }))
+    .map((a) => ({ kind: 'article', id: a.id, title: a.title, summary: a.date, path: `/insights/blog/${a.id}` }))
 
   const results = [...inServices, ...inTeam, ...inArticles]
   res.json({ query: q, total: results.length, results })

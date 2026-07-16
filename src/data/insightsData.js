@@ -3,6 +3,7 @@ import { asset } from './siteData'
 
 export const allReviews = raw.reviews.map((review) => ({
   initials: review.initials,
+  colorClass: review.colorClass,
   name: review.name,
   date: review.date,
   text: review.text,

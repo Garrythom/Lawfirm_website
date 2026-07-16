@@ -54,7 +54,17 @@ function BlogDetail() {
       <PageHeader title="Blog" crumb="Blog" image={asset('assets/img/background/blog_bg.jpg')} />
       <section className="case-detail blog-detail">
         <div className="case-detail__content">
-          <img className="case-detail__hero" src={asset(detail.heroImage.replace(/^\//, ''))} alt="" loading="lazy" />
+          <div className="case-detail__hero-wrap">
+            <img className="case-detail__hero" src={asset(detail.heroImage.replace(/^\//, ''))} alt="" loading="lazy" />
+            <div className="case-detail__hero-tiles" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
           <div className="case-detail__intro">
             <time>{detail.date}</time>
             <h2>{detail.title}</h2>
@@ -62,21 +72,31 @@ function BlogDetail() {
           <div className="case-detail__body">{detail.blocks.map(renderBlock)}</div>
         </div>
         <aside className="case-detail__sidebar">
-          <div className="blog-sidebar__search">
-            <input type="search" placeholder="KEYWORDS" disabled />
-            <span aria-hidden="true">&#128269;</span>
+          <div className="blog-sidebar__box">
+            <h3 className="case-detail__sidebar-heading">Search</h3>
+            <form className="blog-sidebar__search" onSubmit={(event) => event.preventDefault()}>
+              <input type="search" placeholder="KEYWORDS" />
+              <button type="submit" aria-label="Search">
+                <svg viewBox="0 0 20 20" width="18" height="18" fill="none" aria-hidden="true">
+                  <circle cx="8.5" cy="8.5" r="6.5" stroke="currentColor" strokeWidth="2" />
+                  <line x1="13.4" y1="13.4" x2="18" y2="18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </button>
+            </form>
           </div>
 
-          <div>
+          <div className="blog-sidebar__box">
             <h3 className="case-detail__sidebar-heading">Latest Post</h3>
             <div className="blog-sidebar__latest-list">
               {latestPosts.map((post) => (
                 <Link className="blog-sidebar__latest-item" to={`/insights/blog/${post.id}`} key={post.id}>
-                  <img src={post.image} alt="" loading="lazy" />
-                  <div>
+                  <span className="blog-sidebar__latest-thumb">
+                    <img src={post.image} alt="" loading="lazy" />
+                  </span>
+                  <span className="blog-sidebar__latest-text">
                     <time>{post.date}</time>
                     <h4>{post.title}</h4>
-                  </div>
+                  </span>
                 </Link>
               ))}
             </div>

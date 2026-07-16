@@ -18,7 +18,7 @@ function Blog() {
                 <img src={post.image} alt="" loading="lazy" aria-hidden="true" />
               </div>
               <div className="article-card__body">
-                <time><span aria-hidden="true">&#128197;</span> {post.date}</time>
+                <time>{post.date}</time>
                 <h3>
                   <Link to={`/insights/blog/${post.id}`} style={{ color: 'inherit' }}>{post.title}</Link>
                 </h3>
