@@ -3,6 +3,7 @@ import SiteLayout from '../layouts/SiteLayout'
 import About from '../pages/About'
 import Blog from '../pages/Blog'
 import BlogDetail from '../pages/BlogDetail'
+import CaseStudyDetail from '../pages/CaseStudyDetail'
 import Contact from '../pages/Contact'
 import Home from '../pages/Home'
 import Insights from '../pages/Insights'
@@ -21,6 +22,7 @@ function AppRoutes() {
         <Route path="services/:id" element={<ServiceDetail />} />
         <Route path="team" element={<Team />} />
         <Route path="insights" element={<Insights />} />
+        <Route path="insights/case-studies/:id" element={<CaseStudyDetail />} />
         <Route path="insights/blog" element={<Blog />} />
         <Route path="insights/blog/:id" element={<BlogDetail />} />
         <Route path="insights/reviews" element={<Reviews />} />

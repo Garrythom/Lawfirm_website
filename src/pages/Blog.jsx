@@ -12,11 +12,20 @@ function Blog() {
         <SectionTitle kicker="Recent Blog Post" title="Latest Legal Articles" align="center" />
         <div className="article-grid article-grid--full">
           {blogPosts.map((post) => (
-            <article className="article-card" key={post.id}>
-              <img src={post.image} alt="" loading="lazy" />
-              <time>{post.date}</time>
-              <h3>{post.title}</h3>
-              <Link to={`/insights/blog/${post.id}`}>Read More <span aria-hidden="true">-&gt;</span></Link>
+            <article className="article-card article-card--blog" key={post.id}>
+              <div className="article-card__media">
+                <img src={post.image} alt="" loading="lazy" />
+                <img src={post.image} alt="" loading="lazy" aria-hidden="true" />
+              </div>
+              <div className="article-card__body">
+                <time><span aria-hidden="true">&#128197;</span> {post.date}</time>
+                <h3>
+                  <Link to={`/insights/blog/${post.id}`} style={{ color: 'inherit' }}>{post.title}</Link>
+                </h3>
+                <Link className="article-card__readmore" to={`/insights/blog/${post.id}`}>
+                  Read More <span aria-hidden="true">-&gt;</span>
+                </Link>
+              </div>
             </article>
           ))}
         </div>
