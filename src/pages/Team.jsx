@@ -12,6 +12,7 @@ function Team() {
           {team.map((member) => (
             <article className="team-card" key={member.name}>
               <div className="team-card__photo">
+                <span className="team-card__ring" aria-hidden="true" />
                 <img src={member.image} alt={member.name} loading="lazy" />
               </div>
               <p>{member.role}</p>

@@ -26,7 +26,7 @@ function BlogDetail() {
         <div>
           <SectionTitle kicker={post.date} title={post.title} />
           <p>
-            This article is published in full on the Golden Pacific Law Firm blog. Visit the firm&rsquo;s site to
+            This article is published in full on the Pacific Gate Law Firm blog. Visit the firm&rsquo;s site to
             read the complete piece.
           </p>
           <Link className="button button--solid" to="/insights/blog">Back to all articles <span aria-hidden="true">-&gt;</span></Link>

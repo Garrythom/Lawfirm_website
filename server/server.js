@@ -1,4 +1,4 @@
-// Golden Pacific Law Firm — Mock backend
+// Pacific Gate Law Firm — Mock backend
 // Inferred implementation: reproduces the likely API surface for a law-firm site
 // (lead capture, content reads, search). No payment flows are inferred — none observed.
 

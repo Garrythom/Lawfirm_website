@@ -14,7 +14,7 @@ function Home() {
       <HeroSlider slides={heroSlides} />
 
       <RevealOnScroll as="section" className="feature-band patterned">
-        <SectionTitle kicker="Welcome to Golden Pacific" title="Best Law Firm" align="center" />
+        <SectionTitle kicker="Welcome to Pacific Gate" title="Best Law Firm" align="center" />
         <div className="feature-grid">
           {featureCards.map(([lineOne, lineTwo], index) => (
             <article className="feature-card" key={lineOne}>
@@ -38,9 +38,9 @@ function Home() {
 
       <section className="about-snapshot">
         <div>
-          <SectionTitle kicker="About Golden Pacific" title="Your Global Legal Shield in Finance" />
+          <SectionTitle kicker="About Pacific Gate" title="Your Global Legal Shield in Finance" />
           <p>
-            In an era of rapidly evolving global finance and increasingly sophisticated criminal methods, Golden Pacific
+            In an era of rapidly evolving global finance and increasingly sophisticated criminal methods, Pacific Gate
             Law Firm, founded in the State of Washington in 1993, specializes in providing top-tier defense against
             financial crime, AML compliance, and cross-border asset recovery for multinational corporations, financial
             institutions, and high-net-worth individuals. We bring together former regulators, seasoned trial attorneys,

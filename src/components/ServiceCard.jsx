@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 
-function ServiceCard({ service }) {
+function ServiceCard({ service, icon }) {
   return (
     <article className="service-card">
       <div className="service-card__image">
         <img src={service.image} alt="" loading="lazy" />
         <div className="service-card__badge" aria-hidden="true">
-          <img src="https://www.gp-dm.com/assets/img/icon/sec-title-img1.png" alt="" />
+          <img src={icon || 'https://www.gp-dm.com/assets/img/icon/sec-title-img1.png'} alt="" />
         </div>
       </div>
       <div className="service-card__body">

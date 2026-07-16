@@ -43,7 +43,7 @@ function About() {
         <div>
           <SectionTitle kicker="Global Financial Law Defense" title="Your Trusted Legal Shield in a Complex Financial World" />
           <p>
-            In an era defined by borderless capital flows and sophisticated financial crime, Golden Pacific Law Firm
+            In an era defined by borderless capital flows and sophisticated financial crime, Pacific Gate Law Firm
             stands as a preeminent strategic advisor. Headquartered in the State of Washington with a global reach,
             we are singularly focused on protecting multinational corporations, financial institutions, and
             high-net-worth individuals from their most critical legal threats&mdash;wherever they arise.
@@ -68,19 +68,35 @@ function About() {
       <RevealOnScroll as="section" className="history-section patterned">
         <SectionTitle kicker="Our Journey" title="30 Years of Legal Leadership" align="center" />
         <div className="history-grid">
+          <div className="history-grid__divider" aria-hidden="true" />
           {[
             ['1993', 'Foundation & Pioneering', 'Established in State of Washington, focusing on the growing complexity of white-collar crime and securities litigation from the outset.'],
             ['2000', 'International Expansion', 'Opened our London office, marking the strategic entry into the European market and the beginning of building a global service network.'],
             ['2015', 'Strategic Focus', 'Formally restructured the firm, establishing Asset Recovery, Financial Fraud, Insolvency, and Financial Services Litigation as our four global pillar practices.'],
             ['2024', 'Global Top-Tier Honor', "Achieved 'Band 1' rankings in all core practice areas in Chambers Global, solidifying our position among the world's top-tier financial law firms."],
-          ].map(([year, title, text], index) => (
-            <article className="history-card" key={year}>
-              <img src={asset(`assets/img/resource/company-history-img${index + 1}.jpg`)} alt="" loading="lazy" />
-              <span>{year}</span>
-              <h3>{title}</h3>
-              <p>{text}</p>
-            </article>
-          ))}
+          ].map(([year, title, text], index) => {
+            const column = index + 1
+            const imageFirst = index % 2 === 1
+            return (
+              <article className="history-card" key={year} style={{ display: 'contents' }}>
+                <img
+                  className={imageFirst ? 'history-card__media history-card__media--top' : 'history-card__media history-card__media--bottom'}
+                  src={asset(`assets/img/resource/company-history-img${index + 1}.jpg`)}
+                  alt=""
+                  loading="lazy"
+                  style={{ gridColumn: column, gridRow: imageFirst ? 1 : 3 }}
+                />
+                <span className="history-card__badge" style={{ gridColumn: column, gridRow: 2 }}>{year}</span>
+                <div
+                  className={imageFirst ? 'history-card__text history-card__text--bottom' : 'history-card__text history-card__text--top'}
+                  style={{ gridColumn: column, gridRow: imageFirst ? 3 : 1 }}
+                >
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </div>
+              </article>
+            )
+          })}
         </div>
       </RevealOnScroll>
     </>

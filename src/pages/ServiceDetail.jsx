@@ -1,14 +1,18 @@
+import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { services } from '../data/siteData'
+import { asset, navItems, services } from '../data/siteData'
 import serviceContent from '../data/serviceContent.json'
 import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
 import Accordion from '../components/Accordion'
+import VideoModal from '../components/VideoModal'
 
 function ServiceDetail() {
   const { id } = useParams()
   const service = services.find((s) => s.id === id)
   const content = serviceContent[id]
+  const serviceLinks = navItems.find((item) => item.label === 'Services')?.children ?? []
+  const [videoOpen, setVideoOpen] = useState(false)
 
   if (!service) {
     return (
@@ -23,24 +27,30 @@ function ServiceDetail() {
 
   return (
     <>
-      <PageHeader title={service.title} crumb="Practice Area" image={service.image} />
+      <PageHeader title={service.title} crumb={service.title} crumbLead="Service" image={service.heroImage} />
 
       <section className="service-detail">
         <aside className="service-detail__sidebar">
           <div className="service-detail__nav">
             <h3>Service List</h3>
             <ul>
-              {services.map((s) => (
-                <li key={s.id}>
-                  <Link to={`/services/${s.id}`} className={s.id === id ? 'active' : ''}>
-                    {s.title} <span aria-hidden="true">-&gt;</span>
-                  </Link>
-                </li>
-              ))}
+              {serviceLinks.map((link) => {
+                const linkId = link.path.replace('/services/', '')
+                const isActive = linkId === id
+                return (
+                  <li key={link.path}>
+                    <Link to={link.path} className={isActive ? 'active' : ''}>
+                      <span>{link.label}</span>
+                      <span className="service-detail__nav-arrow" aria-hidden="true">-&gt;</span>
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </div>
           <div className="service-detail__contact">
-            <h3>Get in touch</h3>
+            <img className="service-detail__contact-icon" src={asset('assets/img/icon/about-v2-icon1.png')} alt="" aria-hidden="true" />
+            <span className="service-detail__contact-kicker">Get in Touch</span>
             <p>Legal justice<br />for you</p>
             <Link className="button button--solid" to="/contact">Contact us <span aria-hidden="true">-&gt;</span></Link>
           </div>
@@ -65,6 +75,24 @@ function ServiceDetail() {
             </>
           )}
 
+          {content?.secondaryImage && !content?.videoUrl && (
+            <div className="service-detail__media">
+              <img src={asset(content.secondaryImage)} alt="" loading="lazy" />
+            </div>
+          )}
+
+          {content?.videoUrl && (
+            <button
+              type="button"
+              className={`service-detail__media service-detail__media--video ${content.secondaryImage ? '' : 'service-detail__media--bare'}`}
+              onClick={() => setVideoOpen(true)}
+              aria-label="Watch the video"
+            >
+              {content.secondaryImage && <img src={asset(content.secondaryImage)} alt="" loading="lazy" />}
+              <span className="service-detail__play" aria-hidden="true">&#9658;</span>
+            </button>
+          )}
+
           {content?.strategies && (
             <>
               <h3>{content.strategiesHeading}</h3>
@@ -77,6 +105,12 @@ function ServiceDetail() {
                 ))}
               </ul>
             </>
+          )}
+
+          {content?.gallery && (
+            <div className="service-detail__gallery">
+              {content.gallery.map((src) => <img key={src} src={asset(src)} alt="" loading="lazy" />)}
+            </div>
           )}
 
           {content?.documentation && (
@@ -93,12 +127,16 @@ function ServiceDetail() {
           {content?.cases?.length > 0 && (
             <div className="service-detail__cases">
               <h3>{content.casesHeading}</h3>
-              <p>Click a case to expand and view the details:</p>
+              <p>Click the &quot;+&quot; sign to expand and view our representative cases:</p>
               <Accordion items={content.cases} />
             </div>
           )}
         </div>
       </section>
+
+      {videoOpen && content?.videoUrl && (
+        <VideoModal url={content.videoUrl} onClose={() => setVideoOpen(false)} />
+      )}
     </>
   )
 }

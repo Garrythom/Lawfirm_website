@@ -10,7 +10,13 @@ function Services() {
       <section className="services-page patterned">
         <SectionTitle kicker="Our Specializations" title="Comprehensive Legal Services for Modern Challenges" align="center" />
         <div className="services-grid">
-          {services.map((service) => <ServiceCard key={service.id} service={service} />)}
+          {services.map((service) => (
+            <ServiceCard
+              key={service.id}
+              service={service}
+              icon={`/clone-assets/assets/img/icon/service-icon-${service.number}.png`}
+            />
+          ))}
         </div>
       </section>
     </>

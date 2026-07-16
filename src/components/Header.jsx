@@ -66,8 +66,8 @@ function Header() {
     <>
       <header className="site-header">
         <div className="site-header__brand">
-          <NavLink to="/" aria-label="Golden Pacific Law Firm home">
-            <img src="/clone-assets/assets/img/resource/logo-1.png" alt="Golden Pacific Law Firm" />
+          <NavLink to="/" aria-label="Pacific Gate Law Firm home">
+            <img src="/clone-assets/assets/img/resource/logo-1.svg" alt="Pacific Gate Law Firm" />
           </NavLink>
         </div>
         <button className="site-header__menu-button" type="button" onClick={() => setMenuOpen(true)}>
@@ -106,7 +106,7 @@ function Header() {
 
       <div className={`mobile-drawer ${menuOpen ? 'mobile-drawer--open' : ''}`}>
         <button className="mobile-drawer__close" type="button" onClick={closeMenu} aria-label="Close menu">x</button>
-        <img src="/clone-assets/assets/img/resource/logo-1.png" alt="Golden Pacific Law Firm" />
+        <img src="/clone-assets/assets/img/resource/logo-1.svg" alt="Pacific Gate Law Firm" />
         {navItems.map((item) => (
           <NavLink key={item.label} to={item.path} onClick={closeMenu}>{item.label}</NavLink>
         ))}
