@@ -39,12 +39,10 @@ function ContactForm() {
       setStatus({ type: 'success', text: result.message })
       setForm(initialForm)
     } catch (error) {
-      // Fallback for dev when the API server is not running
       setStatus({
-        type: 'success',
-        text: 'Your case outline has been received. The clone API stores this as a mock lead.',
+        type: 'error',
+        text: error.message || 'Something went wrong sending your message. Please try again, or reach us by phone or email.',
       })
-      setForm(initialForm)
     } finally {
       setSubmitting(false)
     }
