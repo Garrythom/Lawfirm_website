@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
-import { navItems } from '../data/siteData'
+import { contactInfo, navItems } from '../data/siteData'
 import { api } from '../services/api'
 
 function Header() {
@@ -9,10 +9,14 @@ function Header() {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState([])
   const [openSubmenu, setOpenSubmenu] = useState(null)
+  const [openMobileSubmenu, setOpenMobileSubmenu] = useState(null)
   const closeTimerRef = useRef(null)
   const searchInputRef = useRef(null)
 
-  const closeMenu = () => setMenuOpen(false)
+  const closeMenu = () => {
+    setMenuOpen(false)
+    setOpenMobileSubmenu(null)
+  }
 
   useEffect(() => {
     if (searchOpen) searchInputRef.current?.focus()
@@ -119,12 +123,59 @@ function Header() {
       </header>
 
       <div className={`mobile-drawer ${menuOpen ? 'mobile-drawer--open' : ''}`}>
-        <button className="mobile-drawer__close" type="button" onClick={closeMenu} aria-label="Close menu">x</button>
-        <img src="/clone-assets/assets/img/resource/logo-1.svg" alt="Pacific Gate Law Firm" />
-        {navItems.map((item) => (
-          <NavLink key={item.label} to={item.path} onClick={closeMenu}>{item.label}</NavLink>
-        ))}
-        <NavLink className="button button--solid" to="/contact" onClick={closeMenu}>Contact Us -&gt;</NavLink>
+        <div className="mobile-drawer__top">
+          <NavLink to="/" onClick={closeMenu} className="mobile-drawer__brand" aria-label="Pacific Gate Law Firm home">
+            <span className="mobile-drawer__brand-icon" aria-hidden="true" />
+            <span className="mobile-drawer__brand-text">
+              <strong>Pacific Gate</strong>
+              <small>Law Firm</small>
+            </span>
+          </NavLink>
+          <button className="mobile-drawer__close" type="button" onClick={closeMenu} aria-label="Close menu">&times;</button>
+        </div>
+        <ul className="mobile-drawer__nav">
+          {navItems.map((item) => {
+            const isOpen = openMobileSubmenu === item.label
+            return (
+              <li key={item.label} className={item.children ? 'mobile-drawer__item--has-children' : ''}>
+                <div className="mobile-drawer__row">
+                  <NavLink to={item.path} onClick={closeMenu}>{item.label}</NavLink>
+                  {item.children && (
+                    <button
+                      type="button"
+                      className={`mobile-drawer__dropdown-btn ${isOpen ? 'mobile-drawer__dropdown-btn--open' : ''}`}
+                      onClick={() => setOpenMobileSubmenu(isOpen ? null : item.label)}
+                      aria-expanded={isOpen}
+                      aria-label={`Toggle ${item.label} submenu`}
+                    >
+                      <span aria-hidden="true">&#9662;</span>
+                    </button>
+                  )}
+                </div>
+                {item.children && (
+                  <ul className={`mobile-drawer__submenu ${isOpen ? 'mobile-drawer__submenu--open' : ''}`}>
+                    {item.children.map((child) => (
+                      <li key={child.label}>
+                        <NavLink to={child.path} onClick={closeMenu}>{child.label}</NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            )
+          })}
+        </ul>
+        <div className="mobile-drawer__contact">
+          <span className="mobile-drawer__contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+              <path
+                d="M6.6 3.5 9 5.9c.4.4.4 1 .1 1.5L7.6 9.7a13.6 13.6 0 0 0 6.7 6.7l2.3-1.5c.5-.3 1.1-.3 1.5.1l2.4 2.4c.5.5.5 1.3 0 1.7l-1.7 1.7c-.5.5-1.3.7-2 .5C10.9 19.5 4.5 13.1 2.9 7.2c-.2-.7 0-1.5.5-2L5.1 3.5c.4-.5 1.2-.5 1.5 0Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          <a href={`tel:${contactInfo.phone}`}>{contactInfo.phone}</a>
+        </div>
       </div>
       {menuOpen && <button className="drawer-backdrop" type="button" onClick={closeMenu} aria-label="Close menu"></button>}
 

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Preloader from '../components/Preloader'
 
 function SiteLayout() {
   const [visible, setVisible] = useState(false)
@@ -15,6 +16,7 @@ function SiteLayout() {
 
   return (
     <>
+      <Preloader />
       <Header />
       <main>
         <Outlet />

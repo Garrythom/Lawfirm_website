@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
 const AUTO_ADVANCE_MS = 5000
-const SLOT = 160
+const SLOT = 240
 
 function pickVisible(width) {
   if (width >= 1200) return 5

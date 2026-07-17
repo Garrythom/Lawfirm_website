@@ -55,7 +55,9 @@ function Home() {
             </div>
           </div>
         </div>
-        <img className="about-snapshot__portrait" src={asset('assets/img/about/about-v1-img1.jpg')} alt="" />
+        <div className="about-snapshot__portrait-wrap">
+          <img className="about-snapshot__portrait" src={asset('assets/img/about/about-v1-img1.jpg')} alt="" />
+        </div>
         <StatList items={stats} />
       </section>
 
@@ -66,7 +68,9 @@ function Home() {
           alt=""
           aria-hidden="true"
         />
-        <img src={asset('assets/img/resource/why-choose-v1-img1.jpg')} alt="" />
+        <div className="why-panel__inner">
+          <img src={asset('assets/img/resource/why-choose-v1-img1.jpg')} alt="" />
+        </div>
         <div>
           <SectionTitle kicker="Our Strengths" title="Why Global Clients Choose Our Firm" />
           <p>
@@ -129,7 +133,17 @@ function Home() {
         <div className="article-grid">
           {blogPosts.slice(0, 2).map((post) => (
             <article className="article-card" key={post.id}>
-              <img src={post.image} alt="" loading="lazy" />
+              <div className="article-card__media-wrap">
+                <img src={post.image} alt="" loading="lazy" />
+                <div className="article-card__tiles" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
               <time>{post.date}</time>
               <h3>{post.title}</h3>
               <Link to={`/insights/blog/${post.id}`}>Read More -&gt;</Link>
