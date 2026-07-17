@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
 import RevealOnScroll from '../components/RevealOnScroll'
@@ -62,7 +63,7 @@ function About() {
               </li>
             ))}
           </ul>
-          <a className="button button--solid" href="/contact">Get a free consultation <span>-&gt;</span></a>
+          <Link className="button button--solid" to="/contact">Get a free consultation <span>-&gt;</span></Link>
         </div>
       </section>
       <RevealOnScroll as="section" className="history-section patterned">

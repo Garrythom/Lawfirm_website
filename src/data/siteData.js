@@ -1,4 +1,4 @@
-export const asset = (path) => `https://www.gp-dm.com/${path}`
+export const asset = (path) => `/clone-assets/${path}`
 
 export const AVATAR_GRADIENTS = {
   'bg-blue': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',

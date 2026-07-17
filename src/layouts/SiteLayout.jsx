@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Preloader from '../components/Preloader'
 
 function SiteLayout() {
   const [visible, setVisible] = useState(false)
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [pathname])
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 245)

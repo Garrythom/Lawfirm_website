@@ -3,13 +3,13 @@ function PageHeader({ title, crumb, image, crumbLead = 'Home' }) {
     <section className="page-hero">
       <img
         className="page-hero__shape page-hero__shape--1"
-        src="https://www.gp-dm.com/assets/img/shape/page-header-shape1.png"
+        src="/clone-assets/assets/img/shape/page-header-shape1.png"
         alt=""
         aria-hidden="true"
       />
       <img
         className="page-hero__shape page-hero__shape--2"
-        src="https://www.gp-dm.com/assets/img/shape/page-header-shape2.png"
+        src="/clone-assets/assets/img/shape/page-header-shape2.png"
         alt=""
         aria-hidden="true"
       />

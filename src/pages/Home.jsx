@@ -48,7 +48,7 @@ function Home() {
             safeguarding assets worldwide.
           </p>
           <div className="signature-row">
-            <a className="button button--solid" href="/about">Learn More <span>-&gt;</span></a>
+            <Link className="button button--solid" to="/about">Learn More <span>-&gt;</span></Link>
             <div>
               <img src={asset('assets/img/about/signature1.png')} alt="" />
               <span>Robert Martin Donaldson, Founder</span>
@@ -84,7 +84,7 @@ function Home() {
             <li>Deep Expertise at the Finance-Tech Legal Frontier</li>
             <li>Strategic, Business-Oriented Legal Counsel</li>
           </ul>
-          <a className="button button--solid" href="/about">Our Advantages <span>-&gt;</span></a>
+          <Link className="button button--solid" to="/about">Our Advantages <span>-&gt;</span></Link>
         </div>
       </section>
 
@@ -119,10 +119,10 @@ function Home() {
 
       <section className="cta-band" style={{ backgroundImage: `linear-gradient(rgba(0,25,49,.72), rgba(0,25,49,.72)), url(${asset('assets/img/background/cta-v1-bg.jpg')})` }}>
         <div className="cta-band__icon">
-          <img src="https://www.gp-dm.com/assets/img/icon/sec-title-img1.png" alt="" />
+          <img src="/clone-assets/assets/img/icon/sec-title-img1.png" alt="" />
         </div>
         <h2>Have any query<br />Contact us</h2>
-        <a className="button button--solid" href="/contact">Contact Us <span>-&gt;</span></a>
+        <Link className="button button--solid" to="/contact">Contact Us <span>-&gt;</span></Link>
       </section>
 
       <section className="blog-preview">
