@@ -299,5 +299,5 @@ export const contactInfo = {
   phone: '+1 937-986-8247',
   email: 'support@pacificgatelawfirm.com',
   locations: ['45 Fremont St, San Francisco, CA 94105', 'Safeco Plaza, 1001 4th Ave #4320, Seattle, WA 98154'],
-  whatsapp: 'https://wa.me/12064303838',
+  whatsapp: 'https://wa.me/19379868247',
 }

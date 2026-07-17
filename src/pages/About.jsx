@@ -84,12 +84,12 @@ function About() {
                   src={asset(`assets/img/resource/company-history-img${index + 1}.jpg`)}
                   alt=""
                   loading="lazy"
-                  style={{ gridColumn: column, gridRow: imageFirst ? 1 : 3 }}
+                  style={{ gridColumn: column, gridRow: imageFirst ? 1 : 3, order: index * 3 + (imageFirst ? 0 : 2) }}
                 />
-                <span className="history-card__badge" style={{ gridColumn: column, gridRow: 2 }}>{year}</span>
+                <span className="history-card__badge" style={{ gridColumn: column, gridRow: 2, order: index * 3 + 1 }}>{year}</span>
                 <div
                   className={imageFirst ? 'history-card__text history-card__text--bottom' : 'history-card__text history-card__text--top'}
-                  style={{ gridColumn: column, gridRow: imageFirst ? 3 : 1 }}
+                  style={{ gridColumn: column, gridRow: imageFirst ? 3 : 1, order: index * 3 + (imageFirst ? 2 : 0) }}
                 >
                   <h3>{title}</h3>
                   <p>{text}</p>
