@@ -6,6 +6,8 @@ import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
 import Accordion from '../components/Accordion'
 import VideoModal from '../components/VideoModal'
+import ArrowIcon from '../components/ArrowIcon'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 
 function ServiceDetail() {
   const { id } = useParams()
@@ -13,13 +15,14 @@ function ServiceDetail() {
   const content = serviceContent[id]
   const serviceLinks = navItems.find((item) => item.label === 'Services')?.children ?? []
   const [videoOpen, setVideoOpen] = useState(false)
+  useDocumentTitle(service?.title ?? 'Practice Area')
 
   if (!service) {
     return (
       <section className="services-page patterned">
         <SectionTitle kicker="Not Found" title="Service not found" align="center" />
         <p style={{ textAlign: 'center' }}>
-          <Link className="text-link" to="/services">Back to all services <span aria-hidden="true">-&gt;</span></Link>
+          <Link className="text-link" to="/services">Back to all services <span aria-hidden="true"><ArrowIcon /></span></Link>
         </p>
       </section>
     )
@@ -27,7 +30,7 @@ function ServiceDetail() {
 
   return (
     <>
-      <PageHeader title={service.title} crumb={service.title} crumbLead="Service" image={service.heroImage} />
+      <PageHeader title={service.title} crumb={service.title} crumbLead="Service" crumbLeadPath="/services" image={service.heroImage} />
 
       <section className="service-detail">
         <aside className="service-detail__sidebar">
@@ -41,7 +44,7 @@ function ServiceDetail() {
                   <li key={link.path}>
                     <Link to={link.path} className={isActive ? 'active' : ''}>
                       <span>{link.label}</span>
-                      <span className="service-detail__nav-arrow" aria-hidden="true">-&gt;</span>
+                      <span className="service-detail__nav-arrow" aria-hidden="true"><ArrowIcon /></span>
                     </Link>
                   </li>
                 )
@@ -52,7 +55,7 @@ function ServiceDetail() {
             <img className="service-detail__contact-icon" src={asset('assets/img/icon/about-v2-icon1.png')} alt="" aria-hidden="true" />
             <span className="service-detail__contact-kicker">Get in Touch</span>
             <p>Legal justice<br />for you</p>
-            <Link className="button button--solid" to="/contact">Contact us <span aria-hidden="true">-&gt;</span></Link>
+            <Link className="button button--solid" to="/contact">Contact us <span aria-hidden="true"><ArrowIcon /></span></Link>
           </div>
         </aside>
 

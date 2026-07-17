@@ -1,4 +1,6 @@
-function PageHeader({ title, crumb, image, crumbLead = 'Home' }) {
+import { Link } from 'react-router-dom'
+
+function PageHeader({ title, crumb, image, crumbLead = 'Home', crumbLeadPath = '/' }) {
   return (
     <section className="page-hero">
       <img
@@ -15,7 +17,7 @@ function PageHeader({ title, crumb, image, crumbLead = 'Home' }) {
       />
       <div className="page-hero__photo" style={{ backgroundImage: `url(${image})` }} />
       <div className="page-hero__inner">
-        <div className="breadcrumb"><span></span> {crumbLead} <em>/</em> {crumb}</div>
+        <div className="breadcrumb"><span></span> <Link to={crumbLeadPath}>{crumbLead}</Link> <em>/</em> {crumb}</div>
         <h1>{title}</h1>
       </div>
     </section>

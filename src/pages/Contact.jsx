@@ -1,6 +1,7 @@
 import ContactForm from '../components/ContactForm'
 import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { asset, contactInfo } from '../data/siteData'
 
 const ICONS = {
@@ -50,6 +51,7 @@ function ContactInfoCard({ icon, label, children }) {
 }
 
 function Contact() {
+  useDocumentTitle('Contact Us')
   return (
     <>
       <PageHeader title="Contact Us" crumb="Contact Us" image={asset('assets/img/background/contact_bg.jpg')} />

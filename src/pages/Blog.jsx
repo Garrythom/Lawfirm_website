@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
+import ArrowIcon from '../components/ArrowIcon'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { asset } from '../data/siteData'
 import { blogPosts } from '../data/insightsData'
 
 function Blog() {
+  useDocumentTitle('Blog')
   return (
     <>
       <PageHeader title="Blog" crumb="Blog" image={asset('assets/img/background/blog_bg.jpg')} />
@@ -23,7 +26,7 @@ function Blog() {
                   <Link to={`/insights/blog/${post.id}`} style={{ color: 'inherit' }}>{post.title}</Link>
                 </h3>
                 <Link className="article-card__readmore" to={`/insights/blog/${post.id}`}>
-                  Read More <span aria-hidden="true">-&gt;</span>
+                  Read More <span aria-hidden="true"><ArrowIcon /></span>
                 </Link>
               </div>
             </article>

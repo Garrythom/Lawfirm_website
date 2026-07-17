@@ -3,6 +3,7 @@ import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
 import { asset, AVATAR_GRADIENTS } from '../data/siteData'
 import { allReviews } from '../data/insightsData'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 
 const TRUNCATE_LENGTH = 200
 
@@ -48,6 +49,7 @@ function ReviewCard({ review }) {
 }
 
 function Reviews() {
+  useDocumentTitle('Reviews')
   return (
     <>
       <PageHeader title="Reviews" crumb="Reviews" image={asset('assets/img/background/reviews_bg.jpg')} />

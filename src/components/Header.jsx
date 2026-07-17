@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
 import { contactInfo, navItems } from '../data/siteData'
 import { api } from '../services/api'
+import ArrowIcon from './ArrowIcon'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -101,7 +102,10 @@ function Header() {
               onMouseEnter={() => item.children && openSubmenuFor(item.label)}
               onMouseLeave={() => item.children && scheduleCloseSubmenu()}
             >
-              <NavLink to={item.path}>{item.label}</NavLink>
+              <NavLink to={item.path}>
+                {item.label}
+                {item.children && <span className="site-header__nav-caret" aria-hidden="true">&#9662;</span>}
+              </NavLink>
               {item.children && (
                 <div className="site-header__submenu">
                   {item.children.map((child) => (
@@ -114,10 +118,13 @@ function Header() {
         </nav>
         <div className="site-header__actions">
           <button className="icon-button" type="button" aria-label="Open search" onClick={() => setSearchOpen(true)}>
-            <span aria-hidden="true"></span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="8.5" cy="8.5" r="7" stroke="currentColor" strokeWidth="1.6" />
+              <line x1="13.5" y1="13.5" x2="18" y2="18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+            </svg>
           </button>
           <NavLink className="button button--solid" to="/contact">
-            Contact Us <span aria-hidden="true">-&gt;</span>
+            Contact Us <span aria-hidden="true"><ArrowIcon /></span>
           </NavLink>
         </div>
       </header>

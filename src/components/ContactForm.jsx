@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { api } from '../services/api'
+import ArrowIcon from './ArrowIcon'
 
 const initialForm = {
   fname: '',
@@ -60,7 +61,7 @@ function ContactForm() {
       <textarea name="message" placeholder="OUTLINE YOUR CASE" value={form.message} onChange={updateField}></textarea>
       {status && <p className={`contact-form__status contact-form__status--${status.type}`}>{status.text}</p>}
       <button className="button button--solid" type="submit" disabled={submitting}>
-        {submitting ? 'Submitting...' : <>Submit Case <span aria-hidden="true">-&gt;</span></>}
+        {submitting ? 'Submitting...' : <>Submit Case <span aria-hidden="true"><ArrowIcon /></span></>}
       </button>
     </form>
   )

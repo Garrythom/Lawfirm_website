@@ -1,8 +1,10 @@
 import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { asset, team } from '../data/siteData'
 
 function Team() {
+  useDocumentTitle('Experienced Attorneys')
   return (
     <>
       <PageHeader title="Experienced Attorneys" crumb="Team" image={asset('assets/img/background/team_bg.jpg')} />

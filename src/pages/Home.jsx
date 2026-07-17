@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import SectionTitle from '../components/SectionTitle'
+import ArrowIcon from '../components/ArrowIcon'
 import ServiceCarousel from '../components/ServiceCarousel'
 import ReviewCarousel from '../components/ReviewCarousel'
 import HeroSlider from '../components/HeroSlider'
@@ -7,8 +8,10 @@ import StatList from '../components/StatList'
 import RevealOnScroll from '../components/RevealOnScroll'
 import { asset, featureCards, heroSlides, reviews, services, stats } from '../data/siteData'
 import { blogPosts } from '../data/insightsData'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 
 function Home() {
+  useDocumentTitle()
   return (
     <>
       <HeroSlider slides={heroSlides} />
@@ -48,7 +51,7 @@ function Home() {
             safeguarding assets worldwide.
           </p>
           <div className="signature-row">
-            <Link className="button button--solid" to="/about">Learn More <span>-&gt;</span></Link>
+            <Link className="button button--solid" to="/about">Learn More <span><ArrowIcon /></span></Link>
             <div>
               <img src={asset('assets/img/about/signature1.png')} alt="" />
               <span>Robert Martin Donaldson, Founder</span>
@@ -84,7 +87,7 @@ function Home() {
             <li>Deep Expertise at the Finance-Tech Legal Frontier</li>
             <li>Strategic, Business-Oriented Legal Counsel</li>
           </ul>
-          <Link className="button button--solid" to="/about">Our Advantages <span>-&gt;</span></Link>
+          <Link className="button button--solid" to="/about">Our Advantages <span><ArrowIcon /></span></Link>
         </div>
       </section>
 
@@ -100,7 +103,7 @@ function Home() {
                 </h3>
                 <p>{service.summary}</p>
               </div>
-              <Link to={`/services/${service.id}`}>Learn More -&gt;</Link>
+              <Link to={`/services/${service.id}`}>Learn More <ArrowIcon /></Link>
             </article>
           ))}
         </div>
@@ -122,13 +125,13 @@ function Home() {
           <img src="/clone-assets/assets/img/icon/sec-title-img1.png" alt="" />
         </div>
         <h2>Have any query<br />Contact us</h2>
-        <Link className="button button--solid" to="/contact">Contact Us <span>-&gt;</span></Link>
+        <Link className="button button--solid" to="/contact">Contact Us <span><ArrowIcon /></span></Link>
       </section>
 
       <section className="blog-preview">
         <div className="blog-preview__top">
           <SectionTitle kicker="Recent Blog Post" title="Latest Articles" />
-          <Link className="text-link" to="/insights/blog">All Article <span>-&gt;</span></Link>
+          <Link className="text-link" to="/insights/blog">All Article <span><ArrowIcon /></span></Link>
         </div>
         <div className="article-grid">
           {blogPosts.slice(0, 2).map((post) => (
@@ -146,7 +149,7 @@ function Home() {
               </div>
               <time>{post.date}</time>
               <h3>{post.title}</h3>
-              <Link to={`/insights/blog/${post.id}`}>Read More -&gt;</Link>
+              <Link to={`/insights/blog/${post.id}`}>Read More <ArrowIcon /></Link>
             </article>
           ))}
         </div>

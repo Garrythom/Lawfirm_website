@@ -2,21 +2,24 @@ import { Link, useParams } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
 import ContactForm from '../components/ContactForm'
+import ArrowIcon from '../components/ArrowIcon'
 import { asset, services } from '../data/siteData'
 import { caseStudies } from '../data/insightsData'
 import caseDetails from '../data/caseStudyDetails.json'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 
 function CaseStudyDetail() {
   const { id } = useParams()
   const meta = caseStudies.find((item) => String(item.id) === id)
   const detail = caseDetails.find((item) => item.id === id)
+  useDocumentTitle(detail?.title ?? 'Case Details')
 
   if (!meta || !detail) {
     return (
       <section className="services-page patterned">
         <SectionTitle kicker="Not Found" title="Case study not found" align="center" />
         <p style={{ textAlign: 'center' }}>
-          <Link className="text-link" to="/insights">Back to all case studies <span aria-hidden="true">-&gt;</span></Link>
+          <Link className="text-link" to="/insights">Back to all case studies <span aria-hidden="true"><ArrowIcon /></span></Link>
         </p>
       </section>
     )

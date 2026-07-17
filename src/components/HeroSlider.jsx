@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import ArrowIcon from './ArrowIcon'
 
 function HeroSlider({ slides }) {
   const [index, setIndex] = useState(0)
@@ -27,7 +28,7 @@ function HeroSlider({ slides }) {
         <h1>{active.title}</h1>
         <p>{active.copy}</p>
         <Link className="text-link" to="/contact">
-          Get a free consultation <span aria-hidden="true">-&gt;</span>
+          Get a free consultation <span aria-hidden="true"><ArrowIcon /></span>
         </Link>
         {slides.length > 1 && (
           <div className="hero-dots" role="tablist" aria-label="Hero slides">

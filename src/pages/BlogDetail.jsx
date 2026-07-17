@@ -1,9 +1,11 @@
 import { Link, useParams } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
+import ArrowIcon from '../components/ArrowIcon'
 import SectionTitle from '../components/SectionTitle'
 import { asset } from '../data/siteData'
 import { blogPosts } from '../data/insightsData'
 import blogDetails from '../data/blogPostDetails.json'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 
 function renderBlock(block, index) {
   switch (block.type) {
@@ -37,13 +39,14 @@ function BlogDetail() {
   const meta = blogPosts.find((post) => String(post.id) === id)
   const detail = blogDetails.find((post) => post.id === id)
   const latestPosts = blogPosts.slice(0, 5)
+  useDocumentTitle(detail?.title ?? 'Blog')
 
   if (!meta || !detail) {
     return (
       <section className="services-page patterned">
         <SectionTitle kicker="Not Found" title="Article not found" align="center" />
         <p style={{ textAlign: 'center' }}>
-          <Link className="text-link" to="/insights/blog">Back to all articles <span aria-hidden="true">-&gt;</span></Link>
+          <Link className="text-link" to="/insights/blog">Back to all articles <span aria-hidden="true"><ArrowIcon /></span></Link>
         </p>
       </section>
     )
@@ -106,7 +109,7 @@ function BlogDetail() {
             <img className="service-detail__contact-icon" src={asset('assets/img/icon/about-v2-icon1.png')} alt="" aria-hidden="true" />
             <span className="service-detail__contact-kicker">Get in Touch</span>
             <p>Legal justice<br />for you</p>
-            <Link className="button button--solid" to="/contact">Contact us <span aria-hidden="true">-&gt;</span></Link>
+            <Link className="button button--solid" to="/contact">Contact us <span aria-hidden="true"><ArrowIcon /></span></Link>
           </div>
         </aside>
       </section>

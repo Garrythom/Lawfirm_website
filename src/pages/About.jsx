@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
 import RevealOnScroll from '../components/RevealOnScroll'
+import ArrowIcon from '../components/ArrowIcon'
 import { useCountUp } from '../hooks/useCountUp'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { asset } from '../data/siteData'
 
 const aboutList = [
@@ -33,6 +35,7 @@ function YearsBadge() {
 }
 
 function About() {
+  useDocumentTitle('About Us')
   return (
     <>
       <PageHeader title="About Us" crumb="About Us" image={asset('assets/img/background/about_bg.jpg')} />
@@ -63,7 +66,7 @@ function About() {
               </li>
             ))}
           </ul>
-          <Link className="button button--solid" to="/contact">Get a free consultation <span>-&gt;</span></Link>
+          <Link className="button button--solid" to="/contact">Get a free consultation <span><ArrowIcon /></span></Link>
         </div>
       </section>
       <RevealOnScroll as="section" className="history-section patterned">

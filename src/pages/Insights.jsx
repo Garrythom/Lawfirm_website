@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import SectionTitle from '../components/SectionTitle'
+import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { asset } from '../data/siteData'
 import { caseStudies } from '../data/insightsData'
 
 function Insights() {
+  useDocumentTitle('Case Studies')
   return (
     <>
       <PageHeader title="Case Studies" crumb="Case Studies" image={asset('assets/img/background/case_studies_bg.jpg')} />

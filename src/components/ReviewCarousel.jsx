@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AVATAR_GRADIENTS } from '../data/siteData'
+import ArrowIcon from './ArrowIcon'
 
 const AUTO_ADVANCE_MS = 5000
 const EXIT_MS = 1400
@@ -102,7 +103,7 @@ function ReviewCarousel({ reviews }) {
 
         <div>
           <Link className="button button--solid" to="/insights/reviews">
-            Learn More <span aria-hidden="true">-&gt;</span>
+            Learn More <span aria-hidden="true"><ArrowIcon /></span>
           </Link>
         </div>
       </div>
