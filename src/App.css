@@ -2126,8 +2126,8 @@
 
 .footer-authority .footer-icon {
   flex-shrink: 0;
-  font-size: 12px;
-  margin-top: 4px;
+  font-size: 16px;
+  margin-top: 3px;
 }
 
 .site-footer__about > a {
@@ -2136,7 +2136,7 @@
 
 .site-footer__about img {
   margin-bottom: 22px;
-  width: 210px;
+  width: 260px;
 }
 
 .site-footer__bottom {

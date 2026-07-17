@@ -4,36 +4,44 @@ import { awards, contactInfo } from '../data/siteData'
 
 function LocationIcon() {
   return (
-    <svg className="footer-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+    <svg className="footer-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
       <path
         d="M12 21s7-6.1 7-11.5a7 7 0 1 0-14 0C5 14.9 12 21 12 21Z"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.6"
+        strokeWidth="1.8"
         strokeLinejoin="round"
       />
-      <circle cx="12" cy="9.5" r="2.4" fill="none" stroke="currentColor" strokeWidth="1.6" />
+      <circle cx="12" cy="9.5" r="2.4" fill="none" stroke="currentColor" strokeWidth="1.8" />
     </svg>
   )
 }
 
 function EmailIcon() {
   return (
+    <svg className="footer-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <rect x="3" y="5.5" width="18" height="13" rx="1.5" fill="none" stroke="currentColor" strokeWidth="1.8" />
+      <path d="M4 7 12 13 20 7" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+function ChevronIcon() {
+  return (
     <svg className="footer-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
-      <rect x="3" y="5.5" width="18" height="13" rx="1.5" fill="none" stroke="currentColor" strokeWidth="1.6" />
-      <path d="M4 7 12 13 20 7" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+      <path d="M9 4.5 16.5 12 9 19.5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )
 }
 
 function PhoneIcon() {
   return (
-    <svg className="footer-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+    <svg className="footer-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
       <path
         d="M6.6 3.5 9 5.9c.4.4.4 1 .1 1.5L7.6 9.7a13.6 13.6 0 0 0 6.7 6.7l2.3-1.5c.5-.3 1.1-.3 1.5.1l2.4 2.4c.5.5.5 1.3 0 1.7l-1.7 1.7c-.5.5-1.3.7-2 .5C10.9 19.5 4.5 13.1 2.9 7.2c-.2-.7 0-1.5.5-2L5.1 3.5c.4-.5 1.2-.5 1.5 0Z"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.6"
+        strokeWidth="1.8"
         strokeLinejoin="round"
       />
     </svg>
@@ -70,7 +78,7 @@ function Footer() {
             ].map(({ label, path }) => (
               <li key={label}>
                 <NavLink to={path}>
-                  <span className="footer-icon" aria-hidden="true">&#8250;</span>{label}
+                  <ChevronIcon />{label}
                 </NavLink>
               </li>
             ))}
