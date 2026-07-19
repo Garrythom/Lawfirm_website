@@ -1,17 +1,18 @@
-# Golden Pacific Law Firm — Clone
+# Pacific Gate Law Firm — Website
 
-A near pixel-perfect recreation of [gp-dm.com](https://www.gp-dm.com/) (the
-"Golden Pacific Law Firm" site) built with **React + Vite** on the frontend
-and a small **Express** mock backend.
+A production-style law firm website built as a front-end development
+portfolio project, featuring **React + Vite**, a serverless contact-form
+pipeline (Vercel + Resend), and a fully responsive, pixel-accurate
+layout modeled on a real-world law firm site.
 
-> **Reproduction status**
-> - **Exact reproductions:** layout, typography, color palette, navigation
+> **Implementation notes**
+> - **Frontend:** layout, typography, color palette, navigation
 >   (header + dropdowns + mobile drawer + search modal), home/about/services/team/insights/contact
 >   pages, footer, contact-form client-side validation, responsive breakpoints.
-> - **Inferred implementations:** backend API surface (`/api/services`,
->   `/api/team`, `/api/contact`, `/api/search`, `/api/leads`), the lead-capture
->   POST endpoint, and the in-memory lead store. No payment flows were
->   observed on the source site.
+> - **Backend:** API surface (`/api/services`, `/api/team`, `/api/contact`,
+>   `/api/search`, `/api/leads`), the lead-capture POST endpoint, and an
+>   in-memory lead store for local development. No payment flows are part
+>   of this site.
 
 ## Stack
 
@@ -88,8 +89,4 @@ cp .env.example .env
 
 ## Screenshots
 
-The original screenshots used as reference live in `public/`.
-
-## License
-
-Internal clone — for educational purposes.
+Reference screenshots live in `public/`.
