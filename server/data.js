@@ -193,8 +193,8 @@ export const awards = Array.from({ length: 15 }, (_, index) =>
 )
 
 export const contactInfo = {
-  phone: '+1 937-986-8247',
+  phone: '+1 901-827-9729',
   email: 'support@pacificgatelawfirm.com',
   locations: ['45 Fremont St, San Francisco, CA 94105', 'Safeco Plaza, 1001 4th Ave #4320, Seattle, WA 98154'],
-  whatsapp: 'https://wa.me/19379868247',
+  whatsapp: 'https://wa.me/19018279729',
 }
